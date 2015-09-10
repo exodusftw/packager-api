@@ -106,7 +106,7 @@ Example:
 * Start App as root or with sudo privileges:
   * `./app.py` or `sudo ./app.py`
 * Default Credentials for application are:
-  * `admin` / `python`
+  * `root` / `python`
 
 ## Testing
 * Testing scripts have been placed in the `examples` directory and Test:
