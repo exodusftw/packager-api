@@ -51,16 +51,15 @@ RESTful API using Python/Flask that provides capabilities for managing:
   * Example:
 ```bash
 /usr/bin/curl -i -H "Content-Type: application/json" -X POST -d \
-S>'{
+'{
      "repotag": "ol7_spacewalk22_client",
      "name": "Spacewalk Client 2.2 for Oracle Linux 7 ($basearch)",
      "baseurl": "http://public-yum.oracle.com/repo/OracleLinux/OL7/spacewalk22/client/$basearch/",
      "gpgkey": "file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle",
      "gpgcheck": 1,
      "enabled": 1 
-   }' \
-  "http://${username}:${password}@localhost:5000/packager/repo"
-
+}' \
+"http://${username}:${password}@localhost:5000/packager/repo"
 ```
 
 #### Packages
