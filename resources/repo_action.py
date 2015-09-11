@@ -117,7 +117,7 @@ class RepoAction(Resource):
 
         f.close
 
-        return { "Added repo with options:\nrepo": args }
+        return { "Added repo with options: repo": args }
 
     # Delete Repo file from /etc/yum.repos.d using Repo Tag name
     def delete(self):
@@ -128,4 +128,4 @@ class RepoAction(Resource):
             os.remove(f)
             return { "Removed Repo file": f }
         else:
-            return { "Repo File: %s Does not exist in /etc/yum.repos.d" % f }
+            return { "Repo File does not exist in /etc/yum.repos.d": f }
