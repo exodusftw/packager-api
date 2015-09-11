@@ -127,4 +127,5 @@ class RepoAction(Resource):
         if os.path.isfile(f):
             os.remove(f)
             return { "Removed Repo file": f }
-
+        else:
+            return { "Repo File: %s Does not exist in /etc/yum.repos.d" % f }
